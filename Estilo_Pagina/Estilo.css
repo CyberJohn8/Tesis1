@@ -513,7 +513,7 @@ FORMATO CELULARES
 
     .logo-secundaria {
         width: 40px; /* Ajuste de ancho de la imagen secundaria */
-        left: 10%; /* Ajusta la posición desde el lado izquierdo */
+        left: 10px; /* Ajusta la posición desde el lado izquierdo */
     }
 
     .contenedor {
