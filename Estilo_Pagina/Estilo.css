@@ -499,7 +499,7 @@ FORMATO CELULARES
 */
 
 /* Media Queries para dispositivos móviles 290px */
-@media (max-width: 190px) {
+@media (max-width: 720px) {
 
     /* CABEZA */
     header {
@@ -534,13 +534,12 @@ FORMATO CELULARES
     /* CUERPO */
     .Fondo {
 
-        width: 290px;        /* Establece la anchura de la pagina */
+        width: 330px;        /* Establece la anchura de la pagina */
         height: 580px;     /* Establece la altura de la pagina */
         display: flex;
         flex-direction: column;
         justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
     
-        /*background-image: url('Fotos/Fondo_Final.png'); /* URL de tu imagen de fondo */
         background-size: cover; /* Ajusta la imagen para cubrir toda el área */
         background-position: center; /* Centra la imagen */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -554,16 +553,16 @@ FORMATO CELULARES
 
     /* Clase para el fondo inicial */
     .fondo-inicial {
-        background-image: url("Fotos/Fondo_Telefono_Inicio.png");
+        background-image: url("../Fotos/Fondo_Telefono_Inicio.png");
     }
 
     /* Clase para el fondo final */
     .fondo-final {
-        background-image: url("Fotos/Fondo_Telefono_Final.png");
+        background-image: url("../Fotos/Fondo_Telefono_Final.png");
     }
 
     .Tronco {
-        width: 290px; /* Ajuste de ancho */
+        width: 320px; /* Ajuste de ancho */
         height: 350px;
         padding: 10px; /* Ajuste de padding */
         gap: 10px; /* Ajuste de espacio entre elementos */
@@ -600,14 +599,14 @@ FORMATO CELULARES
     /* Carusel en modo telefono */
     .menu-container {
         width: 260px; /* Ajuste de ancho */
-        height: 80px; /* Ajuste de alto */
+        height: 40px; /* Ajuste de alto */
 
         margin: 0px; /* Márgenes exteriores */
         display: flex;
         justify-content: center;
         align-items: center;
 
-        background-image: none; /* Cambia a la ruta de tu imagen */
+        background-image: none; /* Cambia a la ruta de tu imagen ../Fotos/Menu_Barra.png */
     }
 
     /* Estilos para los elementos de primer nivel del menú */
