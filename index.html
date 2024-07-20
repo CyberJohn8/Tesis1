@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Enlace para el archivo CSS -->
-    <link rel="stylesheet" href="../Exquisiteses_El_Maná/Estilo_Pagina/Estilo.css">
+    <link rel="stylesheet" href="Estilo_Pagina/Estilo.css">
 
 </head>
 
@@ -29,7 +29,7 @@
             <div class="Cabeza">
                 <input type="checkbox" id="menuToggle">
                 <label for="menuToggle">
-                    <img src="../Exquisiteses_El_Maná/Fotos/Boton_cruvo.png" alt="Menú" class="logo-secundaria">
+                    <img src="Fotos/Boton_cruvo.png" alt="Menú" class="logo-secundaria">
                 </label>
                 <nav id="menu">
                     <ul>
@@ -39,7 +39,7 @@
                         <li><a href="#Producto">Nuestros Productos</a></li>
                     </ul>
                 </nav>
-                <!--<img src="../Exquisiteses_El_Maná/Fotos/nombre_Empresa.jpg" alt="Logo Principal" class="logo-principal">-->
+                <!--<img src="Fotos/nombre_Empresa.jpg" alt="Logo Principal" class="logo-principal">-->
             </div>
         </header>
         
@@ -62,7 +62,7 @@
                 <!-- Contenedor para el logo -->
                 <section class="contenido_Principal" id="contenido">
                     <div class="contenido_Principal" id="contenidouno">
-                        <img src="../Exquisiteses_El_Maná/Fotos/LOGO_Final.png" alt="Logo Mana" class="logo_Inicio">
+                        <img src="Fotos/LOGO_Final.png" alt="Logo Mana" class="logo_Inicio">
                     </div>
                 </section>
             </div><!-- *************** -->
@@ -103,14 +103,14 @@
                 <!-- Foto_Los_ALtos -->
                 <div class="Titular_Los_Altos">
 
-                    <img src="../Exquisiteses_El_Maná/Fotos/Titula_Los_Altos.png" alt="Los_Altos" class="Foto_Titular_Los_Altos_Encontrarnos">
+                    <img src="Fotos/Titula_Los_Altos.png" alt="Los_Altos" class="Foto_Titular_Los_Altos_Encontrarnos">
 
                 </div>
 
                 <!-- Foto_Los_ALtos -->
                 <div class="Los_Altos">
 
-                    <a href="https://maps.app.goo.gl/EA946aeX6okJq5XLA"><img src="../Exquisiteses_El_Maná/Fotos/Encuentranos.png" alt="Los_Altos" class="Foto_Los_Altos"></a>
+                    <a href="https://maps.app.goo.gl/EA946aeX6okJq5XLA"><img src="Fotos/Encuentranos.png" alt="Los_Altos" class="Foto_Los_Altos"></a>
 
                 </div>
 
@@ -156,48 +156,87 @@
                                     <li>
                                         <a href="#">Panadería</a>
                                         <ul class="submenu">
-                                            <li data-image="../Exquisiteses_El_Maná/Fotos/galeria_1.jpg"><a href="#">Opción 1</a></li>
-                                            <li data-image="../Exquisiteses_El_Maná/Fotos/galeria_2.jpg"><a href="#">Opción 2</a></li>
+                                            <li data-image="Fotos/galeria_1.jpg"><a href="#">Opción 1</a></li>
+                                            <li data-image="Fotos/galeria_2.jpg"><a href="#">Opción 2</a></li>
                                         </ul>
                                     </li>
                                     <!-- Menu de Pastelería -->
                                     <li>
                                         <a href="#">Pastelería</a>
                                         <ul class="submenu">
-                                            <li data-image="../Exquisiteses_El_Maná/Fotos/galeria_3.jpg"><a href="#">Opción 3</a></li>
-                                            <li data-image="../Exquisiteses_El_Maná/Fotos/galeria_4.jpg"><a href="#">Opción 4</a></li>
+                                            <li data-image="Fotos/galeria_3.jpg"><a href="#">Opción 3</a></li>
+                                            <li data-image="Fotos/galeria_4.jpg"><a href="#">Opción 4</a></li>
                                         </ul>
                                     </li>
                                     <!-- Menu de Abasto -->
                                     <li>
                                         <a href="#">Abasto</a>
                                         <ul class="submenu">
-                                            <li data-image="../Exquisiteses_El_Maná/Fotos/galeria_5.jpg"><a href="#">Opción 1</a></li>
-                                            <li data-image="../Exquisiteses_El_Maná/Fotos/galeria_6.jpg"><a href="#">Opción 2</a></li>
+                                            <li data-image="Fotos/galeria_5.jpg"><a href="#">Opción 1</a></li>
+                                            <li data-image="Fotos/galeria_6.jpg"><a href="#">Opción 2</a></li>
                                         </ul>
                                     </li>
                                     <!-- Menu de Quincalla -->
                                     <li>
                                         <a href="#">Quincalla</a>
                                         <ul class="submenu">
-                                            <li data-image="../Exquisiteses_El_Maná/Fotos/galeria_7.jpg"><a href="#">Opción 1</a></li>
-                                            <li data-image="../Exquisiteses_El_Maná/Fotos/galeria_8.jpg"><a href="#">Opción 2</a></li>
+                                            <li data-image="Fotos/galeria_7.jpg"><a href="#">Opción 1</a></li>
+                                            <li data-image="Fotos/galeria_8.jpg"><a href="#">Opción 2</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="image-container">
-                            <img id="displayedImage" src="../Exquisiteses_El_Maná/Fotos/LOGO_Final.png" alt="Imagen mostrada">
+                            <img id="displayedImage" src="Fotos/LOGO_Final.png" alt="Imagen mostrada">
                         </div>
                     
-                        <script src="../Exquisiteses_El_Maná/Estilo_Pagina/Multi_Menu.js"></script>
+                        <script>
+                            // scripts.js
+
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const submenuItems = document.querySelectorAll('.submenu li');
+                                const displayedImage = document.getElementById('displayedImage');
+
+                                submenuItems.forEach(item => {
+                                    item.addEventListener('click', function(e) {
+                                        e.preventDefault();
+                                        const imageSrc = item.getAttribute('data-image');
+                                        displayedImage.src = imageSrc;
+                                    });
+                                });
+                            });
+                        </script>
                     </div>
                 
                     <!-- Controles ocultos -->
                     <input type="checkbox" id="carousel-control" hidden>
                 
-                    <script src="../Exquisiteses_El_Maná/Estilo_Pagina/pruebas.js"></script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const prevButton = document.querySelector('.carousel-prev');
+                            const nextButton = document.querySelector('.carousel-next');
+                            const items = document.querySelectorAll('.carousel-item');
+                            let currentIndex = 0;
+                        
+                            function updateCarousel() {
+                                const width = items[0].clientWidth;
+                                const newTransformValue = -width * currentIndex;
+                                document.querySelector('.carousel-items').style.transform = `translateX(${newTransformValue}px)`;
+                            }
+                        
+                            prevButton.addEventListener('click', () => {
+                                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                                updateCarousel();
+                            });
+                        
+                            nextButton.addEventListener('click', () => {
+                                currentIndex = (currentIndex + 1) % items.length;
+                                updateCarousel();
+                            });
+                        });
+                        
+                    </script>
                 
                 </div>
 
