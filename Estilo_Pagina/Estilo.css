@@ -499,7 +499,7 @@ FORMATO CELULARES
 */
 
 /* Media Queries para dispositivos móviles */
-@media (max-width: 330) {
+@media (max-width: 300) {
 
     /* CABEZA */
     header {
@@ -534,7 +534,7 @@ FORMATO CELULARES
     /* CUERPO */
     .Fondo {
 
-        width: 350px;        /* Establece la anchura de la pagina */
+        width: 300px;        /* Establece la anchura de la pagina */
         height: 580px;     /* Establece la altura de la pagina */
         display: flex;
         flex-direction: column;
@@ -563,7 +563,7 @@ FORMATO CELULARES
     }
 
     .Tronco {
-        width: 330px; /* Ajuste de ancho */
+        width: 300px; /* Ajuste de ancho */
         height: 350px;
         padding: 10px; /* Ajuste de padding */
         gap: 10px; /* Ajuste de espacio entre elementos */
