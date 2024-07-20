@@ -499,7 +499,7 @@ FORMATO CELULARES
 */
 
 /* Media Queries para dispositivos móviles 290px */
-@media (max-width: 290px) {
+@media (max-width: 190px) {
 
     /* CABEZA */
     header {
