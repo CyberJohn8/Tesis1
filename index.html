@@ -276,20 +276,37 @@
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const tronco = document.getElementById('tronco');
-
-                tronco.addEventListener('scroll', function() {
-                    // Obtener la posición del scroll
-                    let scrollPosition = tronco.scrollTop;
-                    // Obtener la altura total del elemento Tronco
-                    let elementHeight = tronco.scrollHeight - tronco.clientHeight;
-
-                    // Si se ha scrolleado más del 10% de la altura total del elemento, mostrar las columnas
-                    if (scrollPosition > elementHeight * 0.1) {
-                        document.querySelectorAll('.column').forEach(column => {
-                            column.style.display = 'block';
-                        });
-                    }
-                });
+                const sectionToObserve = document.getElementById('Inicio'); // Cambia 'sectionToObserve' por el ID de tu sección específica
+            
+                // Función para mostrar las columnas
+                function mostrarColumnas() {
+                    document.querySelectorAll('.column').forEach(column => {
+                        column.style.display = 'block';
+                    });
+                }
+            
+                // Función para ocultar las columnas
+                function ocultarColumnas() {
+                    document.querySelectorAll('.column').forEach(column => {
+                        column.style.display = 'none';
+                    });
+                }
+            
+                // Crear un IntersectionObserver para observar la visibilidad de la sección específica
+                const intersectionObserver = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (!entry.isIntersecting) {
+                            // La sección específica ha dejado de ser visible
+                            mostrarColumnas();
+                        } else {
+                            // La sección específica es visible
+                            ocultarColumnas();
+                        }
+                    });
+                }, { threshold: [0] });
+            
+                // Observar la sección específica
+                intersectionObserver.observe(sectionToObserve);
             });
         </script>
     
