@@ -553,12 +553,12 @@ FORMATO CELULARES
 
     /* Clase para el fondo inicial */
     .fondo-inicial {
-        background-image: url("../Fotos/Fondo_Telefono_Inicio.png");
+        background-image: url("Fotos/Fondo_Telefono_Inicio.png");
     }
 
     /* Clase para el fondo final */
     .fondo-final {
-        background-image: url("../Fotos/Fondo_Telefono_Final.png");
+        background-image: url("Fotos/Fondo_Telefono_Final.png");
     }
 
     .Tronco {
