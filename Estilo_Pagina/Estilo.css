@@ -498,8 +498,8 @@ FORMATO CELULARES
 -----------------------------------------------------------
 */
 
-/* Media Queries para dispositivos móviles */
-@media (max-width: 300) {
+/* Media Queries para dispositivos móviles 290px */
+@media (max-width: 290px) {
 
     /* CABEZA */
     header {
@@ -513,7 +513,7 @@ FORMATO CELULARES
 
     .logo-secundaria {
         width: 40px; /* Ajuste de ancho de la imagen secundaria */
-        left: 10px; /* Ajusta la posición desde el lado izquierdo */
+        left: 20px; /* Ajusta la posición desde el lado izquierdo */
     }
 
     .contenedor {
@@ -534,13 +534,13 @@ FORMATO CELULARES
     /* CUERPO */
     .Fondo {
 
-        width: 300px;        /* Establece la anchura de la pagina */
+        width: 290px;        /* Establece la anchura de la pagina */
         height: 580px;     /* Establece la altura de la pagina */
         display: flex;
         flex-direction: column;
         justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
     
-        /*background-image: url('../Fotos/Fondo_Final.png'); /* URL de tu imagen de fondo */
+        /*background-image: url('Fotos/Fondo_Final.png'); /* URL de tu imagen de fondo */
         background-size: cover; /* Ajusta la imagen para cubrir toda el área */
         background-position: center; /* Centra la imagen */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -554,16 +554,16 @@ FORMATO CELULARES
 
     /* Clase para el fondo inicial */
     .fondo-inicial {
-        background-image: url("../Fotos/Fondo_Telefono_Inicio.png");
+        background-image: url("Fotos/Fondo_Telefono_Inicio.png");
     }
 
     /* Clase para el fondo final */
     .fondo-final {
-        background-image: url("../Fotos/Fondo_Telefono_Final.png");
+        background-image: url("Fotos/Fondo_Telefono_Final.png");
     }
 
     .Tronco {
-        width: 300px; /* Ajuste de ancho */
+        width: 290px; /* Ajuste de ancho */
         height: 350px;
         padding: 10px; /* Ajuste de padding */
         gap: 10px; /* Ajuste de espacio entre elementos */
@@ -578,7 +578,7 @@ FORMATO CELULARES
 
     .logo_Inicio { /*estilo de la foto al principio*/
 
-        height: 220px;
+        height: 200px;
         width: auto;
     
     }
@@ -586,13 +586,13 @@ FORMATO CELULARES
     .Foto_Titular_Los_Altos_Encontrarnos {
 
         height: 50px;
-        width: 240px;
+        width: 200px;
     
     }
 
     .Foto_Los_Altos {
 
-        height: 160px;
+        height: 140px;
         width: auto;
     
     }
@@ -600,7 +600,7 @@ FORMATO CELULARES
     /* Carusel en modo telefono */
     .menu-container {
         width: 260px; /* Ajuste de ancho */
-        height: 40px; /* Ajuste de alto */
+        height: 80px; /* Ajuste de alto */
 
         margin: 0px; /* Márgenes exteriores */
         display: flex;
@@ -614,8 +614,8 @@ FORMATO CELULARES
     .menu > ul > li {
         display: inline-block; /* Muestra los elementos en línea */
         position: relative; /* Posición relativa para el posicionamiento de submenús */
-        margin-right: -0.05px; /* Márgen derecho entre elementos */
-        margin-left: -0.05px; /* Márgen izquierdo entre elementos */
+        margin-right: -0.00px; /* Márgen derecho entre elementos */
+        margin-left: -0.00px; /* Márgen izquierdo entre elementos */
     }
 
     /* Estilos para los enlaces del menú */
@@ -624,8 +624,12 @@ FORMATO CELULARES
         color: rgb(75, 25, 60); /* Color del texto */
         padding: 0px 0px; /* Padding interno */
         display: block; /* Muestra como bloque para ocupar el ancho completo */
-        /*background-color: #f0f0f0; /* Color de fondo */
-        border-radius: 5px; /* Bordes redondeados */
+        border-radius: 0px; /* Bordes redondeados */
+    }
+
+    /* Estilos para los enlaces de los submenús */
+    .menu ul ul a {
+        padding: 0px 0px; /* Padding interno */
     }
 
     /* Contenedor de la imagen */
@@ -633,9 +637,18 @@ FORMATO CELULARES
         display: flex; /* Utiliza flexbox para el diseño */
         justify-content: center; /* Centra horizontalmente los elementos */
         align-items: center; /* Centra verticalmente los elementos */
-        width: 200px; /* Ancho completo */
-        height: 60vh; /* Altura fija, ajusta según sea necesario */
-        margin-top: 20px; /* Margen superior */
+        width: 260px; /* Ancho completo */
+        height: auto; /* Altura fija, ajusta según sea necesario */
+        margin-top: 0px; /* Margen superior */
+    }
+
+    
+
+    /* Estilos para la imagen */
+    .image-container img {
+        max-width: 180px; /* Ancho máximo del 100% del contenedor */
+        max-height: 180px; /* Altura máxima del 100% del contenedor */
+        display: block; /* Muestra como bloque */
     }
 
     /*
@@ -669,7 +682,7 @@ FORMATO CELULARES
         padding: 0px; /* Espaciado interno */
         margin: 0px; /* Margen alrededor de las columnas */
         flex: 1; /* Permite que las columnas crezcan y se encogen */
-        min-width: 100px; /* Ancho mínimo de las columnas */
+        min-width: 80px; /* Ancho mínimo de las columnas */
 
     }
 }
